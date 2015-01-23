@@ -1,1 +1,8 @@
-# 5373-Swift-Programming-Dinesh
+### NAME
+```
+Dinesh Amarneni
+```
+### Email
+```
+amarneni.dinesh@gmail.com
+```
