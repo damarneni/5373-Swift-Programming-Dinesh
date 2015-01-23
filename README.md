@@ -6,4 +6,4 @@ Dinesh Amarneni
 ```
 amarneni.dinesh@gmail.com
 ```
-![alt tag](https://raw.github.com/damarneni/Dinesh.jpg)
+![alt tag](https://lh4.googleusercontent.com/-9_fIH9tY3Ic/AAAAAAAAAAI/AAAAAAAAAAA/_GBgykn1TUA/photo.jpg)
