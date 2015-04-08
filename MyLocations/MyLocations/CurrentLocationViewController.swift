@@ -15,7 +15,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     var location: CLLocation?
     
-
+    
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
@@ -40,7 +40,6 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
-        viewWillAppear(true)
     }
     
     func showLocationServicesDeniedAlert() {
@@ -52,11 +51,12 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         presentViewController(alert, animated: true, completion: nil)
     }
     
-       
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -76,33 +76,31 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             println("didUpdateLocations \(newLocation)")
             
             location = newLocation
-            //println("location")
-            //println(location.coordinate.latitude)
+            
             updateLabels()
     }
     
     func updateLabels(){
-        let model = (self.tabBarController as CustomTabBarController).model
-        
         if let location = location{
-            model.lat = location.coordinate.latitude
-            model.lon = location.coordinate.longitude
-            latitudeLabel.text = String(format: "%.8f", model.lat)
-            longitudeLabel.text = String(format: "%.8f", model.lon)
-            
+            latitudeLabel.text = String(format: "%.8f", location.coordinate.latitude)
+            longitudeLabel.text = String(format: "%.8f", location.coordinate.longitude)
         }
     }
     
-   //override func viewWillAppear(animated: Bool) {
+   override func viewWillAppear(animated: Bool) {
         // Get a reference to the model data from the custom tab bar controller.
-        //let model = (self.tabBarController as CustomTabBarController).model
-        
+        super.viewWillAppear(animated)
+        let model = (self.tabBarController as CustomTabBarController).model
+        if let location = location{
+            model.lat = location.coordinate.latitude
+            model.lon = location.coordinate.longitude
+        }
         // Show the we can access and update the model data from the first tab.
         // Let's just increase the age each time this tab appears and assign
         // a random name.
         //model.lat = lat
         //model.lon = lon
-    //}
+    }
     
 }
 

@@ -10,62 +10,57 @@ import UIKit
 import MapKit
 
 class SecondViewController: UIViewController {
-
+    
     @IBOutlet weak var mapView: MKMapView!
     
-    
     override func viewDidLoad() {
-        
-        
+        // Get a reference to the model data from the custom tab bar controller.
         super.viewDidLoad()
-        let model = (self.tabBarController as CustomTabBarController).model
-        var location = CLLocationCoordinate2D(
-            latitude: model.lat,
-            longitude: model.lon
+        
+        let location = CLLocationCoordinate2D(
+            latitude: 51.50007773,
+            longitude: -0.1246402
         )
-        // 1
-        
-        setRegion(location)
-        // 2
-        
-        makeAnnotation(location)
-        //3
-        
-        
-        //let model = (self.tabBarController as CustomTabBarController).model
-        //location.latitude = model.lat
-        //location.longitude = model.lon
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func setRegion(location: CLLocationCoordinate2D) {
         let span = MKCoordinateSpanMake(0.05, 0.05)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
-    }
-    
-    func makeAnnotation(location: CLLocationCoordinate2D){
+        
+        //3
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(location)
         annotation.title = "Big Ben"
         annotation.subtitle = "London"
         mapView.addAnnotation(annotation)
+        
     }
     
-    //override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         // Get a reference to the model data from the custom tab bar controller.
-        //let model = (self.tabBarController as CustomTabBarController).model
+        super.viewWillAppear(animated)
+        let model = (self.tabBarController as CustomTabBarController).model
         
-        // This tab will simply access the data and display it when the view
-        // appears.
-        //location.latitude = model.lat
-        //location.longitude = model.lon
+        var location = CLLocationCoordinate2D(
+            latitude: model.lat,
+            longitude: model.lon
+        )
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegion(center: location, span: span)
+        mapView.setRegion(region, animated: true)
         
-    //}
+        //3
+        let annotation = MKPointAnnotation()
+        annotation.setCoordinate(location)
+        annotation.title = "Big Ben"
+        annotation.subtitle = "London"
+        mapView.addAnnotation(annotation)
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+        
 
 
 }
