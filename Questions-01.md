@@ -11,7 +11,9 @@ What is printing after line 3 or gives error?
 ```
 ----
 ## Question2
+```
 Write syntax for String interpolation.
+```
 ----
 
 ## Question3
