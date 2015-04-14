@@ -25,8 +25,6 @@ class ColorTableViewController: UITableViewController {
     @IBOutlet weak var doneMenuButton: UIBarButtonItem!
     @IBOutlet weak var cancelMenuButton: UIBarButtonItem!
     
-    @IBOutlet weak var colSwatch: UILabel!
-    @IBOutlet weak var colorName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,8 +60,14 @@ class ColorTableViewController: UITableViewController {
         let name = color.colorName
         
         println(name)
-        let labelColor:UIColor = myColors.hexStringToUIColor(myColors.fetchHexValue(name))
+        
         cell.textLabel?.text = name
+        cell.textLabel?.textAlignment = NSTextAlignment.Center
+        
+        if let lbl1 = cell.viewWithTag(55) as? UILabel{
+            lbl1.text = ""
+            lbl1.backgroundColor = myColors.hexStringToUIColor(myColors.fetchHexValue(name))
+        }
         
         return cell
     }

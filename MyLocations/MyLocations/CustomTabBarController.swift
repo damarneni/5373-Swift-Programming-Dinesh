@@ -13,6 +13,8 @@ import MapKit
 
 // This class holds the data for my model.
 class ModelData {
+    /*var lat = 51.50007773
+    var lon = -0.1246402*/
     var lat = 0.0
     var lon = 0.0
 }

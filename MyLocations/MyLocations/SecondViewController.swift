@@ -16,8 +16,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         // Get a reference to the model data from the custom tab bar controller.
         super.viewDidLoad()
-        
-        let location = CLLocationCoordinate2D(
+                
+        var location = CLLocationCoordinate2D(
             latitude: 51.50007773,
             longitude: -0.1246402
         )
