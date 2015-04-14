@@ -7,7 +7,7 @@ What is printing after line 3 or gives error?
 ```swift
 1. let constantString = "Highlander"
 2. constantString += " and another Highlander"
-3. print("\(constantString)")
+3. print(constantString)
 ```
 ----
 ## Question2
