@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03B461881A9281280053A7E5"
-               BuildableName = "BullsEye.app"
-               BlueprintName = "BullsEye"
-               ReferencedContainer = "container:BullsEye.xcodeproj">
+               BlueprintIdentifier = "85B0541F1A7FF98600B60421"
+               BuildableName = "Swift Color Game for Kids.app"
+               BlueprintName = "Swift Color Game for Kids"
+               ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03B4619D1A9281280053A7E5"
-               BuildableName = "BullsEyeTests.xctest"
-               BlueprintName = "BullsEyeTests"
-               ReferencedContainer = "container:BullsEye.xcodeproj">
+               BlueprintIdentifier = "85B054341A7FF98600B60421"
+               BuildableName = "Swift Color Game for KidsTests.xctest"
+               BlueprintName = "Swift Color Game for KidsTests"
+               ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03B4619D1A9281280053A7E5"
-               BuildableName = "BullsEyeTests.xctest"
-               BlueprintName = "BullsEyeTests"
-               ReferencedContainer = "container:BullsEye.xcodeproj">
+               BlueprintIdentifier = "85B054341A7FF98600B60421"
+               BuildableName = "Swift Color Game for KidsTests.xctest"
+               BlueprintName = "Swift Color Game for KidsTests"
+               ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B461881A9281280053A7E5"
-            BuildableName = "BullsEye.app"
-            BlueprintName = "BullsEye"
-            ReferencedContainer = "container:BullsEye.xcodeproj">
+            BlueprintIdentifier = "85B0541F1A7FF98600B60421"
+            BuildableName = "Swift Color Game for Kids.app"
+            BlueprintName = "Swift Color Game for Kids"
+            ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B461881A9281280053A7E5"
-            BuildableName = "BullsEye.app"
-            BlueprintName = "BullsEye"
-            ReferencedContainer = "container:BullsEye.xcodeproj">
+            BlueprintIdentifier = "85B0541F1A7FF98600B60421"
+            BuildableName = "Swift Color Game for Kids.app"
+            BlueprintName = "Swift Color Game for Kids"
+            ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03B461881A9281280053A7E5"
-            BuildableName = "BullsEye.app"
-            BlueprintName = "BullsEye"
-            ReferencedContainer = "container:BullsEye.xcodeproj">
+            BlueprintIdentifier = "85B0541F1A7FF98600B60421"
+            BuildableName = "Swift Color Game for Kids.app"
+            BlueprintName = "Swift Color Game for Kids"
+            ReferencedContainer = "container:Swift Color Game for Kids.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

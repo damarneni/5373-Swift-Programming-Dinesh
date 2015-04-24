@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BullsEye.xcscheme</key>
+		<key>Swift Color Game for Kids.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03B461881A9281280053A7E5</key>
+		<key>85B0541F1A7FF98600B60421</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>03B4619D1A9281280053A7E5</key>
+		<key>85B054341A7FF98600B60421</key>
 		<dict>
 			<key>primary</key>
 			<true/>
