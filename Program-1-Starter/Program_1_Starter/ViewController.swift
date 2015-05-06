@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         }else{
             lblCorrectIncorrect.text = "Incorrect!"
         }
-        button1Correct = false
+        //button1Correct = false
         matchColorLogic()
     }
     
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         }else{
             lblCorrectIncorrect.text = "Incorrect!"
         }
-        button2Correct = false
+        //button2Correct = false
         matchColorLogic()
     }
     
@@ -137,7 +137,7 @@ class ViewController: UIViewController {
         }else{
             lblCorrectIncorrect.text = "Incorrect!"
         }
-        button3Correct = false
+        //button3Correct = false
         matchColorLogic()
     }
     
@@ -148,14 +148,17 @@ class ViewController: UIViewController {
     
     
     func matchColorLogic() -> Bool{
-        
+        button1Correct = false
+        button2Correct = false
+        button3Correct = false
         buttonAnswer = Int(arc4random_uniform(3))
         while buttonAnswer == lastButtonAnswer {
             buttonAnswer = Int(arc4random_uniform(3))
         }
-        lastButtonAnswer = buttonAnswer
-        
+       // lastButtonAnswer = buttonAnswer
+        println("\(buttonAnswer)")
         var Answer1 = self.myColors.fetchRandomColor()
+        println(Answer1.colorName)
         var uicolor = self.myColors.hexStringToUIColor(Answer1.hexValue)
         
         var Answer2 = self.myColors.fetchRandomColor()
@@ -168,9 +171,9 @@ class ViewController: UIViewController {
         while Answer3.colorName == Answer1.colorName || Answer3.colorName == Answer2.colorName{
             Answer2 = self.myColors.fetchRandomColor()
         }
-        lastColorNumber = colorNumber
+        //lastColorNumber = colorNumber
         
-        lblChangeColor.backgroundColor = myColors.hexStringToUIColor(Answer1.hexValue)
+        lblChangeColor.backgroundColor = uicolor
         
         var color = colorNumber
         var prev = ((colorNumber - 1) + colorNames.count) % colorNames.count
@@ -185,9 +188,9 @@ class ViewController: UIViewController {
         }
         
         if(buttonAnswer == 1){
-            btnAnswer1OUTLET.setTitle(Answer2.colorName, forState: UIControlState.Normal)
+            btnAnswer1OUTLET.setTitle(Answer3.colorName, forState: UIControlState.Normal)
             btnAnswer2OUTLET.setTitle(Answer1.colorName, forState: UIControlState.Normal)
-            btnAnswer3OUTLET.setTitle(Answer3.colorName, forState: UIControlState.Normal)
+            btnAnswer3OUTLET.setTitle(Answer2.colorName, forState: UIControlState.Normal)
             button2Correct = true
         }
         

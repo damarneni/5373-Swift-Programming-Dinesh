@@ -46,7 +46,7 @@
                                     <rect key="frame" x="43" y="448" width="87" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnAnswer1ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bR4-s2-WbO"/>
+                                    <action selector="btnAnswer1ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jyn-zR-ES8"/>
                                     <action selector="btnFireColorAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8QH-s3-PcZ"/>
                                 </connections>
                             </button>
@@ -74,7 +74,7 @@
                                     <rect key="frame" x="250" y="448" width="90" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnAnswer3ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6o7-ag-wPB"/>
+                                    <action selector="btnAnswer3ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGB-3M-vId"/>
                                     <action selector="btnFireColorAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Url-I0-jEI"/>
                                 </connections>
                             </button>
@@ -112,7 +112,7 @@
                                     <rect key="frame" x="140" y="448" width="95" height="29"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnAnswer2ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSo-gb-5bu"/>
+                                    <action selector="btnAnswer2ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mci-FK-1Y1"/>
                                     <action selector="btnFireColorAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IaX-E2-Na0"/>
                                 </connections>
                             </button>
@@ -145,9 +145,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="btnAnswer1OUTLET" destination="gge-5g-Tg4" id="7mM-Po-mo9"/>
-                        <outlet property="btnAnswer2OUTLET" destination="AHT-oi-VLh" id="ul4-Y5-4Vd"/>
-                        <outlet property="btnAnswer3OUTLET" destination="W7v-iN-haD" id="mlO-wB-DaO"/>
+                        <outlet property="btnAnswer1OUTLET" destination="gge-5g-Tg4" id="g0R-ph-7qF"/>
+                        <outlet property="btnAnswer2OUTLET" destination="AHT-oi-VLh" id="0nY-kI-VHi"/>
+                        <outlet property="btnAnswer3OUTLET" destination="W7v-iN-haD" id="VQK-li-lmr"/>
                         <outlet property="lblChangeColor" destination="NIu-4a-IKl" id="IHs-Ru-S8t"/>
                         <outlet property="lblCorrectIncorrect" destination="sEf-1P-Aej" id="ijK-JS-kUk"/>
                         <outlet property="lblTotalCorrect" destination="yr4-Uz-ff8" id="xxr-eD-YtR"/>
